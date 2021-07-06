@@ -120,7 +120,65 @@ class Piq_Co_Setup {
         'title' => 'PaymentIQ Checkout Buttons color',
         'type' => 'text',
         'description' => 'Hex code of buttons',
-        'default' => '#9c72b6'
+        'default' => '#9C72BC'
+      ),
+      'calculatorWidget' => array(
+        'title' => 'Enable loan calculator',
+        'type' => 'checkbox',
+        'description' => 'Displays a loan calculator at product page',
+        'default' => 'yes'
+      ),
+      array(
+        'title' => __( 'Loan calculator options' ),
+        'type'  => 'title',
+        'desc'  => __( 'The following options affect how prices are displayed on the frontend.', 'woocommerce' ),
+      ),
+      'calculatorMode' => array(
+        'title'    => 'Mode',
+        'desc'     => 'This sets the display mode, classic or modern.',
+        'default'  => 'modern',
+        'type'     => 'select',
+        'class'    => 'wc-enhanced-select',
+        'desc_tip' => true,
+        'options'  => array (
+          'modern'        => 'Modern',
+					'classic'       => 'Classic',
+        ),
+      ),
+      'calculatorBackground' => array(
+        'title' => 'Calculator background color',
+        'type' => 'text',
+        'description' => 'Hex, RGB or name code',
+        'default' => '#f8f8f8'
+      ),
+      'calculatorBorderColor' => array(
+        'title' => 'Calculator border color',
+        'type' => 'text',
+        'description' => 'Hex, RGB or name code',
+        'default' => '#cacaca'
+      ),
+      'calculatorTextColor' => array(
+        'title' => 'Calculator text color',
+        'type' => 'text',
+        'description' => 'Hex, RGB or name code',
+        'default' => '#333333'
+      ),
+      'calculatorBorderRadius' => array(
+        'title' => 'Calculator border radius',
+        'type' => 'text',
+        'description' => 'Border radius in any css unit',
+        'default' => '4px'
+      ),
+      'calculatorRaised' => array(
+        'title' => 'Calculator raised level',
+        'type'     => 'select',
+        'description' => 'Calculator may be formatted to raise above the page',
+        'default' => 0,
+        'options'  => array (
+          0        => 'None',
+					1        => 'Slightly',
+          2        => 'Raised',
+        ),
       ),
     );
   }

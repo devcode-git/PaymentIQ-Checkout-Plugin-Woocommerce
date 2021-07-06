@@ -1,6 +1,6 @@
 {
   "name": "paymentiq-checkout",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "PaymentIQ WooCommerce plugin",
   "main": "index.js",
   "scripts": {

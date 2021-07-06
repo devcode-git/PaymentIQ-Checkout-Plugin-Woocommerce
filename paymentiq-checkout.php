@@ -112,6 +112,13 @@ function initPIQCheckout () {
       $this->piqButtonsColor = strval($this->get_option( 'piqButtonsColor' ));
       $this->rememberUserDevice = strval($this->get_option( 'rememberUserDevice' ));
       $this->captureOnStatusComplete = strval($this->get_option( 'captureOnStatusComplete' ));
+      $this->calculatorWidget = strval($this->get_option( 'calculatorWidget' ));
+      $this->calculatorMode = strval($this->get_option( 'calculatorMode' ));
+      $this->calculatorBackground = strval($this->get_option( 'calculatorBackground' ));
+      $this->calculatorBorderColor = strval($this->get_option( 'calculatorBorderColor' ));
+      $this->calculatorTextColor = strval($this->get_option( 'calculatorTextColor' ));
+      $this->calculatorBorderRadius = strval($this->get_option( 'calculatorBorderRadius' ));
+      $this->calculatorRaised = strval($this->get_option( 'calculatorRaised' ));
       $this->PIQ_TOTAL_AMOUNT = null;
       $this->PIQ_ORDER_ID = null;
 
